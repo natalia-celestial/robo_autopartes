@@ -1,13 +1,13 @@
 # robo_autopartes
 
-Guía rápida (en español) para que cualquier persona del equipo pueda **instalar**, **anotar videos con YOLO** y **preparar el dataset** siguiendo el mismo flujo de trabajo.
+Guía rápida (en español) para **instalar**, **anotar videos con YOLO** y **preparar el dataset** siguiendo el mismo flujo de trabajo.
 
 ---
 
 ## 0) Requisitos
 
 - **GPU NVIDIA** con drivers y CUDA funcionando (recomendado, aunque CPU también sirve pero más lento)
-- **Python 3.10+**
+- **Python 3.11**
 - **Git**
 - Espacio en disco para videos, frames e labels (decenas de miles de imágenes si se extraen muchos fotogramas)
 
@@ -49,8 +49,8 @@ robo_autopartes/
 │  └─ yolo_txt_to_coco.py      # (opcional) Convertir YOLO -> COCO
 ├─ dataset/
 │  ├─ videos/                  # Aquí van los videos originales
-│  │  ├─ Nat/                  # Carpeta del rotulador 1
-│  │  └─ Pedro/                # Carpeta del rotulador 2 (ejemplo)
+│  │  ├─ Nat/                  
+│  │  └─ Pedro/                
 │  ├─ frames/                  # Frames extraídos por persona
 │  │  ├─ Nat/
 │  │  └─ Pedro/
@@ -223,7 +223,4 @@ git push
 
 ---
 
-## 10) Contacto
-
-Cualquier duda, abre un **Issue** en GitHub o escribe al chat interno del equipo.
 
